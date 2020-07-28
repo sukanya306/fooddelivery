@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagnApulia</title>
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" media="screen and (max-width:1270px)"href="phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <style>
+        #navbar {
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+
+        }
+
+        #logo {
+            margin: -5px 25px;
+        }
+
+        #logo img {
+            height: 71px;
+            margin: 14px 7px;
+        }
+
+        #navbar {
+            position: absolute;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top:0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            padding: 10px;
+            list-style: none;
+            font-size: 1.2rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            border-radius: 5px;
+            text-decoration: none;
+            padding: 3px 10px;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            align-items: center;
+            justify-content: center;
+            height: 416px;
+        }
+
+        #home::before {
+            content: "";
+            background: url('img/food1.jpg')no-repeat center center/cover;
+            position: absolute;
+            height: 68%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+            
+
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .btn {
+            border: 2px solid white;
+            background-color: transparent;
+            margin: 17px;
+            border-radius: 5px;
+            padding: 6px 15px;
+            font-size: 1.2rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* services center  */
+        #services {
+            display: flex;
+            margin: 34px;
+        }
+
+        #services .box {
+            border: 2px solid black;
+            padding: 34px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: wheat;
+        }
+
+        #services .box img {
+            height: 200px;
+            display: block;
+            margin: auto;
+        }
+        #services .box p{
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        /* contact section  */
+        #contact{
+            position: relative;
+        }
+        #contact::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('img/food5.jpg')no-repeat center center/cover;
+        }
+        #contact-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 34px;
+        }
+        #contact-box input{
+            width: 100%;
+            padding: 0.3rem;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        #contact-box form{
+            width: 40%;
+
+        }
+        #contact-box label{
+            font-size: 1.3rem;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        footer{
+            background-color: white;
+            color:black;
+            padding: 9px 20px;
+        }
+        .h-primary {
+            /*utility class*/
+            font-size: 2.9rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            /*utility class*/
+            font-size: 2.2rem;
+            padding: 12px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            <li class="item"><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome for delisious food</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vitae id distinctio odio dolor cumque
+            quasi dolorem maiores praesentium officiis?</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="servises-control">
+        <h1 class="h-primary center">Welcome to our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/food4.png" alt="">
+                <h2 class="h-secondary center">Food Odering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusamus, officiis
+                    adipisci cum fugit iure cumque soluta repellat facilis rerum. Magni eos voluptatibus sed. Pariatur,
+                    hic? Voluptate voluptatum iusto architecto hic tempora facilis assumenda!</p>
+            </div>
+            <div class="box">
+                <img src="img/food2.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Odering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusamus, officiis
+                    adipisci cum fugit iure cumque soluta repellat facilis rerum. Magni eos voluptatibus sed. Pariatur,
+                    hic? Voluptate voluptatum iusto architecto hic tempora facilis assumenda!</p>
+            </div>
+            <div class="box">
+                <img src="img/food3.jpeg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusamus, officiis
+                    adipisci cum fugit iure cumque soluta repellat facilis rerum. Magni eos voluptatibus sed. Pariatur,
+                    hic? Voluptate voluptatum iusto architecto hic tempora facilis assumenda!</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your mail id">
+                </div>
+                <div class="form-group">
+                    <label for="number">Contact Number: </label>
+                    <input type="number" name="number" id="number" placeholder="Enter your number">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address: </label>
+                    <input type="text" name="address" id="address" placeholder="Enter your address">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MagnApulia.com All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
